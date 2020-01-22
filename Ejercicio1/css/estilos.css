@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+    background-image: url(../WebDesign/images/animal.jpg);
+}
+
+header{
+    color: #ffffff;
+    font-family:'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.container {
+    margin: 0 auto; 
+    width:600px;
+    background-color:#002292;
+    padding: 1em;
+    border:#534e4e 5px double;
+}
+h1{
+    color: #ffffff;
+    font-family:'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    border-bottom: solid 20px #ffffff;
+    padding-bottom: 1rem;
+}
+
+h2{
+    color:#ffffff;
+    font-family:'Lato', sans-serif;
+}
+
+h3{
+    color:#ffffff;
+    font-family:'Lato', sans-serif;
+}
+
+p{
+    color:#ffffff;
+}
+.parrafo{
+    color: #ffffff;
+}
+.video{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.img{
+    margin:0 auto;
+    width:500px;
+}
+
+.logo{
+    width:60px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Aqui inicia navegación*/
+
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li{
+font-family: 'Lato' sans-serif;
+list-style: none;
+padding: 5rem 1rem;
+}
+
+a{
+    text-decoration:none;
+    color: #000000;
+}
+
+nav ul li:hover {
+    background-color:#000000;
+    color:#ffffff;
+}
