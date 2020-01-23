@@ -1,0 +1,15 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+    width:610px;
+    background-color: lightpink;
+}
+
+h1{
+    font-family: lato, sans-serif;
+}
