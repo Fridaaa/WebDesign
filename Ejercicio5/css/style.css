@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+  body{
+      font-family: 'Anton', sans-serif;
+      background-color: blueviolet;
+      line-height: 1.5rem;
+  }
+
+  .container{
+      width:80vw;
+      margin: 0 auto;
+      background-color: coral;
+  }
+
+
+  p{
+      font-weight: 300;
+  }
+  h1,h2,p,img {
+    padding: .4rem;
+  }
+
+  h2{
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 2rem;
+  }
+
+  h1{
+    font-size: 5rem;
+    font-weight: 700; 
+    font-family: 'Monoton', cursive;
+    line-height: 6rem;
+  }
+
+ #mar{
+    width:200px;
+    float: left;
+    shape-outside: circle(58px at center center);
+}
+
+#playa{
+    width:300px;
+    float: left;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);;
+}
+
+#anahuac{
+    width:300px;
+    float: right;
+    shape-outside: url(../images/universidad_anahuac.png);
+}
+img{
+    float: left;
+}
+
+main{
+    display:grid;
+    gap: 5px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "u u u d d d"
+    "u u u d d d"
+    "t t t d d d"
+    "t t t . . .";
+}
+
+#uno{
+    grid-area:u;
+}
+#dos{
+    grid-area:d;
+}
+#tres{
+    grid-area:t;
+}
