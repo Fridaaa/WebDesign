@@ -1,7 +1,4 @@
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap');
-    </style> 
-    
+  
         /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,6 +122,16 @@ html {
     border: solid black 1px;
     border-radius: 5px;
   }
+
+i.fas,
+i.fab {
+  font-size:2rem;
+}
+
+i.fas:hover, i.fab:hover {
+  color:white;
+}
+
 
 
 
