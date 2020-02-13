@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Frida A.">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EJERCICIO7</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+
+        <main>
+            <img src="images/not_290_1480962648.jpg" alt="Pájaro loco"> 
+            <p>Hasta la procsima</p>
+        </main>
+
+        <section class="svg">
+                <object id="my-svg" type="image/svg+xml" data="images/pajaroloco.svg"></object>
+        </section>
+        
+
+        <footer>
+            <h2>Made by me</h2>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+    <script>
+        new Vivus('my-svg', {type:'delayed',duration:300});
+    </script>
+    
+</body>
+</html>
+
