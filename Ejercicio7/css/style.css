@@ -184,10 +184,15 @@ html {
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
-	/*html {
+	html {
 		background-color: coral;
 	}
-}*/
+
+	h1{
+		color: rgb(118, 69, 197);
+		text-align: left;
+	}
+}
 	//CSS
 	
   }
