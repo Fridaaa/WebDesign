@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel=”stylesheet” href="css/style.css">
+   
+
+    <title>Scroll reveal.</title>
+</head>
+<body>
+    <header>
+    </header>
+        <div class="container"></div>
+            <section>
+                <h1 class="titulo">Scroll reveeal</h1>
+                <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam tempore obcaecati veniam ipsum repellat. Quae, nulla molestiae? Eius hic amet, consectetur veniam laudantium debitis autem asperiores enim. Officiis, adipisci saepe?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis tempore doloribus corporis adipisci porro? Nulla corrupti suscipit in reprehenderit non, itaque numquam modi dicta, impedit ratione sint eaque nemo!</p>
+                <img src="https://picsum.photos/400/300" alt="Imagen aleatoria 1" class="imagen">
+            </section>
+
+            <section class="sect">
+                <h1>Mar</h1>
+                <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam tempore obcaecati veniam ipsum repellat. Quae, nulla molestiae? Eius hic amet, consectetur veniam laudantium debitis autem asperiores enim. Officiis, adipisci saepe?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis tempore doloribus corporis adipisci porro? Nulla corrupti suscipit in reprehenderit non, itaque numquam modi dicta, impedit ratione sint eaque nemo!</p>
+                <img src="https://picsum.photos/seed/picsum/600/300" alt="Imagen aleatoria 2" class="imagen">
+            </section>
+
+            <section>
+                <h1>Paisajes</h1>
+                <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam tempore obcaecati veniam ipsum repellat. Quae, nulla molestiae? Eius hic amet, consectetur veniam laudantium debitis autem asperiores enim. Officiis, adipisci saepe?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis tempore doloribus corporis adipisci porro? Nulla corrupti suscipit in reprehenderit non, itaque numquam modi dicta, impedit ratione sint eaque nemo!</plass="parrafo">
+                <img src="https://picsum.photos/400/300?grayscale" alt="Imagen aleatoria 3" class="imagen">
+            </section>
+    </div>
+
+    <footer>
+        Frida Acosta 
+    </footer>
+    
+            <script>
+                ScrollReveal().reveal('.imagen',{
+                delay: 375,
+                duration: 500,
+                reset:true
+                });
+            </script>
+
+            <script>
+            ScrollReveal.reveal('.titulo', { distance: '10px' });
+            </script>
+
+            <script>
+            ScrollReveal().reveal('.parrafo', {
+            rotate: {
+                x: 20,
+                z: 20
+            }
+            });
+
+            </script>
+</body>
+</html>
