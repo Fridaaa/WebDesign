@@ -122,11 +122,9 @@ html {
   }
 
 .svg{
-	width:15vw;
+	width:5vw;
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 	
 }
 
