@@ -1,151 +1,104 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Raleway:wght@800&display=swap');
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:700");
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Raleway:wght@800&display=swap');
+  @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:700");
 
-html {
-    box-sizing: border-box;
-  }s
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-  /*Eric Meyer Reset*/
-  
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
-  menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-  }
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
-  footer, header, hgroup, menu, nav, section {
-      display: block;
-  }
-  body {
-      line-height: 1;
-  }
-  ol, ul {
-      list-style: none;
-  }
-  blockquote, q {
-      quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-      content: '';
-      content: none;
-  }
-  table {
-      border-collapse: collapse;
-      border-spacing: 0;
-  }
-
-
-  .container{
-    width:100%;
-    height:100vh;
-    background-color: black;
-  }
-
-  #cuadrado {
-    position: absolute;
-    top: 100px;
-    left: 500px;
-    width: 500px;
-    height: 500px;
+  html {
+      box-sizing: border-box;
+    }s
+    *, *:before, *:after {
+      box-sizing: inherit;
     }
 
- #fx {
-    position: absolute;
-    top: 100px;
-    left: 500px;
-    width: 500px;
-    height: 500px;
+    /*Eric Meyer Reset*/
+    
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
     }
 
-#Er_404{
-    color:white;
-    position: absolute;
-    top: 557px;
-    left: 695px;
-    font-family:'Montserrat Subrayada', sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-}
 
+    .container{
+      width:100%;
+      height:100vh;
+      background-color: black;
+    }
 
-.error{
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 0;
-    position: absolute;
-    left: 745px;
-    top: 450px;
-}
+    #cuadrado {
+      position: absolute;
+      top: 100px;
+      left: 500px;
+      width: 500px;
+      height: 500px;
+      }
 
-.text-animated{
-    font-size: 40px;
-    stroke: #fff;
-    fill: none;
-    stroke-width: 1px;
-    stroke-dasharray: 500;
-    animation-name: animatePath;
-    animation-duration: 8s;
-    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
-    animation-play-state: running;
-  }
+   #fx {
+      position: absolute;
+      top: 100px;
+      left: 500px;
+      width: 500px;
+      height: 500px;
+      }
 
-
-@-webkit-keyframes animatePath {
-  0% {
-    stroke: #fff;
-    stroke-dashoffset: 1500;
-  }
-  30% {
-    stroke:white;
-    stroke-dashoffset: 1000;
-  }
-  60% {
-    stroke:white;
-    stroke-dashoffset: 500;
-  }
-  100% {
-    stroke: white;
-    stroke-dashoffset: 0;
-  }
-}
-
-
-
-  .my-name {
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 0;
-    position: absolute;
-    left: 740px;
-    top: 540px;
-}
-
-
-  
-.text-animate{
+  #Er_404{
+      color:white;
+      position: absolute;
+      top: 557px;
+      left: 695px;
+      font-family:'Montserrat Subrayada', sans-serif;
+      font-weight: 400;
       font-size: 50px;
+  }
+
+
+  .error{
+      font-family: 'Source Sans Pro', sans-serif;
+      padding: 0;
+      position: absolute;
+      left: 745px;
+      top: 450px;
+  }
+
+  .text-animated{
+      font-size: 40px;
       stroke: #fff;
       fill: none;
       stroke-width: 1px;
@@ -158,8 +111,8 @@ html {
       animation-direction: alternate;
       animation-play-state: running;
     }
-  
-  
+
+
   @-webkit-keyframes animatePath {
     0% {
       stroke: #fff;
@@ -178,4 +131,51 @@ html {
       stroke-dashoffset: 0;
     }
   }
-  
+
+
+
+    .my-name {
+      font-family: 'Source Sans Pro', sans-serif;
+      padding: 0;
+      position: absolute;
+      left: 740px;
+      top: 540px;
+  }
+
+
+    
+  .text-animate{
+        font-size: 50px;
+        stroke: #fff;
+        fill: none;
+        stroke-width: 1px;
+        stroke-dasharray: 500;
+        animation-name: animatePath;
+        animation-duration: 8s;
+        animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation-play-state: running;
+      }
+    
+    
+    @-webkit-keyframes animatePath {
+      0% {
+        stroke: #fff;
+        stroke-dashoffset: 1500;
+      }
+      30% {
+        stroke:white;
+        stroke-dashoffset: 1000;
+      }
+      60% {
+        stroke:white;
+        stroke-dashoffset: 500;
+      }
+      100% {
+        stroke: white;
+        stroke-dashoffset: 0;
+      }
+    }
+    
