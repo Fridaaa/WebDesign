@@ -1,0 +1,408 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /*Eric Meyer Reset*/
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+      font-family: monospace;
+      background:black;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  /******************* ESTILOS GENERALES **************/
+:root{
+    --color1:#000000;
+    --color2:#141414;
+    --color3:#1A1A1A;
+    --color4:#1F1F1F;
+    --color5:#212121;
+    --color6:#D9D9D9;
+  }
+  
+/******* SCROLL ANIMATION *********/
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: .4vh;
+    align-self: center;
+  }
+  section {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    color: var(--color6);
+    font-size: 2rem;
+    /*min-height: 100%;*/
+    /* height: 80vh; */
+  }
+  .Quick-navigation {
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .Quick-navigation-item {
+    color: rgba(0,0,0,0.4);
+    text-decoration: none;
+    font-size: 1.3em;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    padding: 0.5em;
+    display: block;
+  }
+  .Quick-navigation-item:hover,
+  .Quick-navigation-item.current {
+    color: #fff;
+  }
+  .Scroll-progress-indicator {
+    will-change: opacity, transform;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    left: -10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    padding: 2em;
+    -webkit-transform: translateX(200%) translateY(-50%);
+            transform: translateX(200%) translateY(-50%);
+    background-color: rgba(0,0,0,0.1);
+  }
+  .Scroll-progress-indicator.visible {
+    -webkit-transform: translateX(-100%) translateY(-50%);
+            transform: translateX(-100%) translateY(-50%);
+    opacity: 1;
+  }
+  #A {
+    background-color:var(--color1);
+    height: 600px;
+  }
+  #B {
+    background-color:var(--color2);
+    height: 400px;
+  }
+  #C {
+    background-color:var(--color3);
+    height: 500px;
+  }
+  #D {
+    background-color:var(--color4);
+    height: 500px;
+  }
+  #E {
+    background-color:var(--color5);
+    height: 600px;
+  }
+  .Scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    padding: 0.5em;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none;
+  }
+  .Scroll-to-top.visible {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .Scroll-to-top:hover {
+    color: rgba(255,255,255,0.9);
+  }
+  /******* CSS GRID MAQUETACIÓN INFORMACIÓN PERSONAL *****/
+  .grid1{
+      display:grid;
+      height:35%;
+      margin: 2em;
+      grid-template-columns: 1fr;
+      grid-template-rows: .3fr .3fr .3fr .3fr;
+  }
+  .grid1 span:nth-child(1) i{
+    grid-column:1;
+    grid-row:1;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:700;
+ }
+  .grid1 span:nth-child(1){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+  }
+  .grid1 span:nth-child(2) i{
+    grid-column:1;
+    grid-row:2;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:700;
+ }
+  .grid1 span:nth-child(2){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+  }
+  .grid1 span:nth-child(3) i{
+    grid-column:1;
+    grid-row:3;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:700;
+ }
+  .grid1 span:nth-child(3){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+  }
+  .grid1 span:nth-child(4) i{
+    grid-column:1;
+    grid-row:4;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:700;
+ }
+  .grid1 span:nth-child(4){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+  }
+/******* CSS GRID MAQUETACIÓN CUALIDADES *****/
+.grid2{
+    display:grid;
+    height:40%;
+    grid-template-columns: .2fr .2fr;
+    grid-template-rows: .3fr .3fr .3fr .3fr;
+    margin: 2em;
+}
+.grid2 span:nth-child(1){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:1;
+    grid-row:1;
+}
+.grid2 span:nth-child(2){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:1;
+    grid-row:2;
+}
+.grid2 span:nth-child(3){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:1;
+    grid-row:3;
+}
+.grid2 span:nth-child(4){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:1;
+    grid-row:4;
+}
+
+
+/******* CSS GRID MAQUETACIÓN FORMACIÓN PERSONAL *****/
+.grid3{
+    display:grid;
+    height:35%;
+    margin: 2em;
+    grid-template-columns: .3fr 2fr;
+    grid-template-rows: .2fr .2fr .2fr .2fr .2fr .2fr;
+}
+
+.grid3 span:nth-child(1){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:1;
+    grid-row:1/2;
+}
+.grid3 span:nth-child(2){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:2;
+    grid-row:2;
+}
+.grid3 span:nth-child(3){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:2;
+    grid-row:3;
+}
+.grid3 span:nth-child(4){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:1;
+    grid-row:4;
+}
+
+.grid3 span:nth-child(5){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:2;
+    grid-row:5;
+}
+.grid3 span:nth-child(6){
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+    grid-column:2;
+    grid-row:6;
+}
+/******* CSS GRID MAQUETACIÓN EXPERIENCIA PROFESIONAL *****/
+.grid4{
+    display:grid;
+    height:50%;
+    margin: 2em;
+    grid-template-columns: .3fr 2fr;
+    grid-template-rows: .2fr .2fr .2fr .2fr .2fr .2fr;
+}
+.grid4 span:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:600;
+    line-height:1;
+}
+.grid4 span:nth-child(2){
+    grid-column: 2;
+    grid-row:2;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:300 ;
+    line-height:1;
+}
+.grid4 span:nth-child(3){
+    grid-column: 2;
+    grid-row:3;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+}
+.grid4 span:nth-child(4){
+    grid-column:1;
+    grid-row:4;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:600;
+    line-height:1;
+}
+.grid4 span:nth-child(5){
+    grid-column:2;
+    grid-row:5;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:300;
+    line-height:1;
+}
+.grid4 span:nth-child(6){
+    grid-column: 2;
+    grid-row: 6;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.6rem;
+    font-weight:400;
+    line-height:1;
+}

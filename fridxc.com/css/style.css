@@ -1,0 +1,12 @@
+
+.container{
+    display: grid;
+    /*grid-template-columns: -webkit-max-content -webkit-max-content minmax(-webkit-min-content, 1fr) -webkit-min-content;*/
+    grid-template-columns: max-content max-content minmax(min-content, 1fr) min-content;
+    grid-template-rows: 12vw auto auto auto auto;
+    background: #F5F1E1;
+    margin: 10rem 2rem;
+    padding: 1rem;
+    min-width: 40rem;
+
+}

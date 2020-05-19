@@ -1,0 +1,525 @@
+
+html {
+    box-sizing: border-box;
+  }s
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*Eric Meyer Reset*/
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+      font-family: monospace;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+
+/******************* ESTILOS GENERALES **************/
+
+:root{
+  --color1:#0D0D0D;
+  --color2:#262626;
+  --color3:#404040;
+  --color4:#616161;
+  --color5:#828282;
+  --color6:#D9D9D9;
+}
+
+body{
+    margin-top: 70px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    background: black;
+}
+
+.proyectos{
+    max-width:1500px;
+    margin-top: 10vw;
+    margin-right: auto;
+    margin-bottom: 4vw;
+    margin-left: auto;
+}
+
+/***CSS GRID VIDEO***/
+
+.video{
+  height:100%;
+  display: grid;
+  grid-template-columns: 60px repeat(auto-fit,minmax(120px,.8fr));
+  /*grid-auto-rows:.6fr;
+  grid-auto-columns:80px;*/
+  grid-auto-flow:dense;
+  row-gap:.5rem;
+  column-gap:.8rem;  
+  justify-content:center;
+  background:black; 
+
+}
+
+ul{
+list-style: none;
+padding: 2.2rem;
+background: #f6f3ea;
+box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+img{
+    width:100%;
+    object-fit:cover;
+    display:block;
+}
+
+video{
+    width:100%;
+    height: 92%;
+    object-fit:cover;
+    display:block;
+}
+
+.video li:nth-child(1){
+    justify-self:end;
+    grid-column:span 1;
+    grid-row:span 1;
+   
+}
+
+.video li:nth-child(2){
+    grid-column:span 2;
+    grid-row:span 1;
+}
+
+.video li:nth-child(3){
+    grid-column:span 3;
+    grid-row:span 1;
+}
+
+.video li:nth-child(4){
+    grid-column:span 3;
+    grid-row:span 1;
+}
+
+.video li:nth-child(5){
+    grid-column:span 3;
+    grid-row:span 1;
+}
+
+.video li:nth-child(6){
+    grid-column:span 4;
+    grid-row:span 1;
+}
+
+.video li:nth-child(7){
+    grid-column:span 2;
+    grid-row:span 1;
+}
+
+/***CSS GRID GRÁFICO***/
+
+.grafico{
+    height:100%;
+    display: grid;
+    grid-template-columns: 60px repeat(auto-fit,minmax(100px,.8fr));
+    /*grid-auto-rows:200px;
+    /*grid-auto-columns:80px;*/
+    grid-auto-flow:dense;
+    row-gap:.5rem;
+    column-gap:.8rem;  
+    justify-content:center;
+    background:black; 
+}
+
+.grafico li:nth-child(1){
+    grid-column:span 1;
+    grid-row:span 1;
+}
+
+.grafico li:nth-child(2){
+    grid-column:span 2;
+    grid-row:span 1;
+}
+
+.grafico li:nth-child(3){
+    grid-column:span 2;
+    grid-row:span 1;
+}
+
+.grafico li:nth-child(4){
+    grid-column:span 2;
+    grid-row:span 1;
+}
+
+.grafico li:nth-child(5){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+/***CSS GRID FOTOGRAFÍA***/
+
+.fotografia{
+    height:100%;
+    display: grid;
+    grid-template-columns:  60px repeat(auto-fit,minmax(100px,.8fr));
+    /*grid-auto-rows:80px;
+    grid-auto-columns:80px;*/
+    grid-auto-flow:dense;
+    row-gap:.5rem;
+    column-gap:.8rem;  
+    justify-content:center;
+    background:black; 
+}
+
+.fotografia li:nth-child(1){
+    grid-column:span ;
+    grid-row:span 1;
+}
+
+.fotografia li:nth-child(2){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+.fotografia li:nth-child(3){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+.fotografia li:nth-child(4){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+.fotografia li:nth-child(5){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+.fotografia li:nth-child(6){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+.fotografia li:nth-child(7){
+    grid-column:span 3;
+    grid-row:span 2;
+}
+
+/***********************HOVER FOTOGRAFIAS******************/
+
+/*COMANDO GENERAL HOVER*/
+h1 {
+    color: white;
+    padding-left: 10px;
+  }
+  
+  #hover {
+    color: rgba(188, 175, 204, 0.9);
+  }
+  
+  h2#testimonials {
+    color: #fffae3;
+  }
+/*COMANDO GENERAL HOVER*/
+
+/* generic css hover */
+
+.view {
+    margin: 10px;
+    float: left;
+    /*border: 10px solid #fff;*/
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /*box-shadow: 1px 1px 2px #e6e6e6;*/
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+  }
+
+.view .mask,
+.view .content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.view img {
+  display: block;
+  position: relative
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 20px;
+  background: #000;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+/* generic css hover */
+
+/***** HOVER EFFECT *****/
+
+.view-first img {
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+  }
+  
+  .view-first .mask {
+    background-color: rgba(12, 19, 27, 0.6);
+    /*background-color: rgba var(--color2);*/
+    width: 300px;
+    padding: 105px;
+    height: 200px;
+    opacity: 0;
+    transform: translate(265px, 145px) rotate(45deg);
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+  
+  .view-first h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-family: Raleway, serif;
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    -webkit-transform: translate(200px, -200px);
+    transform: translate(200px, -200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .view-first p {
+    transform: translate(-200px, 200px);
+    -webkit-transform: translate(200px, -200px);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+  
+  .view-first a.info {
+    transform: translate(0px, 100px);
+    -webkit-transform: translate(0px, 100px);
+    transition: all 0.2s 0.1s ease-in-out;
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+  }
+  
+  
+  /* */
+  
+  .view-first:hover .mask {
+    opacity: 1;
+    transform: translate(-65px, -48px) rotate(0deg);
+    -webkit-transform: translate(-70px, -48px) rotate(0deg);
+  }
+  
+  .view-first:hover h2 {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+  }
+  
+  .view-first:hover p {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s;
+  }
+  
+  .view-first:hover a.info {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+  }
+
+  /*********************** POP FOTOS ******************/
+
+  #myImg {
+        border-color: var(--color6);
+        border-radius: 0;
+        color: var(--color2);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transition: color 150ms ease-in-out;
+        transition: color 150ms ease-in-out;
+        width: 50px;
+        height: 40px;
+        top: 22px;
+      }
+      #myImg:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: var(--color6);
+        z-index: -1;
+        -webkit-transition: width 150ms ease-in-out;
+        transition: width 150ms ease-in-out;
+      }
+      #myImg:hover {
+        color: #fff;
+      }
+      #myImg:hover:after {
+        width: 110%;
+      }
+  
+ 
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--color6);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+   
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
