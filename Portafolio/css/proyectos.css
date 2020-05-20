@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 html {
     box-sizing: border-box;
@@ -80,12 +81,33 @@ body{
     margin-left: auto;
 }
 
+.titulo{
+  color:var(--color6);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size:1.8rem;
+  font-weight:700;
+  position:absolute;
+  top:60px;
+  left:150px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  font-family: 'Chakra Petch', sans-serif;
+  letter-spacing: .4vh;
+  align-self: center;
+  color: var(--color6);
+  font-size: 1.5rem;
+}
+
 /***CSS GRID VIDEO***/
 
 .video{
   height:100%;
   display: grid;
-  grid-template-columns: 60px repeat(auto-fit,minmax(120px,.8fr));
+  grid-template-columns: repeat(auto-fit,minmax(120px,.8fr));
   /*grid-auto-rows:.6fr;
   grid-auto-columns:80px;*/
   grid-auto-flow:dense;
@@ -119,13 +141,13 @@ video{
 
 .video li:nth-child(1){
     justify-self:end;
-    grid-column:span 1;
+    grid-column:span 3;
     grid-row:span 1;
    
 }
 
 .video li:nth-child(2){
-    grid-column:span 2;
+    grid-column:span 3;
     grid-row:span 1;
 }
 
@@ -145,21 +167,18 @@ video{
 }
 
 .video li:nth-child(6){
-    grid-column:span 4;
+    grid-column:span 3;
     grid-row:span 1;
 }
 
-.video li:nth-child(7){
-    grid-column:span 2;
-    grid-row:span 1;
-}
+
 
 /***CSS GRID GRÁFICO***/
 
 .grafico{
     height:100%;
     display: grid;
-    grid-template-columns: 60px repeat(auto-fit,minmax(100px,.8fr));
+    grid-template-columns:repeat(auto-fit,minmax(100px,.8fr));
     /*grid-auto-rows:200px;
     /*grid-auto-columns:80px;*/
     grid-auto-flow:dense;
@@ -170,7 +189,7 @@ video{
 }
 
 .grafico li:nth-child(1){
-    grid-column:span 1;
+    grid-column:span 2;
     grid-row:span 1;
 }
 
@@ -189,17 +208,13 @@ video{
     grid-row:span 1;
 }
 
-.grafico li:nth-child(5){
-    grid-column:span 3;
-    grid-row:span 2;
-}
 
 /***CSS GRID FOTOGRAFÍA***/
 
 .fotografia{
     height:100%;
     display: grid;
-    grid-template-columns:  60px repeat(auto-fit,minmax(100px,.8fr));
+    grid-template-columns: repeat(auto-fit,minmax(100px,.8fr));
     /*grid-auto-rows:80px;
     grid-auto-columns:80px;*/
     grid-auto-flow:dense;
@@ -210,8 +225,8 @@ video{
 }
 
 .fotografia li:nth-child(1){
-    grid-column:span ;
-    grid-row:span 1;
+    grid-column:span 3;
+    grid-row:span 2;
 }
 
 .fotografia li:nth-child(2){
@@ -235,11 +250,6 @@ video{
 }
 
 .fotografia li:nth-child(6){
-    grid-column:span 3;
-    grid-row:span 2;
-}
-
-.fotografia li:nth-child(7){
     grid-column:span 3;
     grid-row:span 2;
 }
