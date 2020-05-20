@@ -4,66 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Proyectos</title>
 </head>
 
+
 <body>    
     
+    <div class="overlay-navigation">
+        <nav role="navigation">
+          <ul>
+            <li><a href="/index.html" data-content="CSS GRID">Inicio</a></li>
+            <li><a href="/proyectos.html" data-content="Galeria">Proyectos</a></li>
+            <li><a href="/curriculum.html" data-content="Historial">Curriculum</a></li>
+            <li><a href="/trabajos.html" data-content="Experiencia">Trabajo</a></li>
+            <li><a href="/contacto.html" data-content="Mensajeria">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="home">
+    
+        <div class="open-overlay">
+          <span class="bar-top"></span>
+          <span class="bar-middle"></span>
+          <span class="bar-bottom"></span>
+        </div>
+        
+      </div>    
+    
+  
     <section class="proyectos">
         <span class="titulo">PROYECTOS</span>
 
-        <h1>VIDEO</h1>        
+        <div class="box box_1">
+        <h1>VIDEO</h1> 
             <ul class="video">
                 
-                <!-- <li>
-                    <div class="titulovideo">
-                    <img src="images/Video.svg" width="340" height="230" alt="logo fridxc">
-                </li>                     -->
-                               
                 <li>
-                    <video src="videos/Chainmeal Final_.m4v" poster="images/portadas/ChainMealPortada.png"  width="854" height="480" controls></video>
+                    <video src="videos/Chainmeal Final_.m4v" poster="images/portadas/ChainMealPortada.png"  width="700" height="480" controls></video>
                 </li>
 
                 <li>
-                    <video src="videos/Friendly Intel Processor-1.m4v" poster="images/portadas/Intel_Cover_Image.jpeg"  width="854" height="480" controls></video>
+                    <video src="videos/Friendly Intel Processor-1.m4v" poster="images/portadas/Intel_Cover_Image.jpeg"  width="700" height="480" controls></video>
                 </li>
 
                 <li>
-                    <video src="videos/Allstar_videom.m4v" poster="images/portadas/Allstar.png"  width="854" height="480" controls></video>
+                    <video src="videos/Allstar_videom.m4v" poster="images/portadas/Allstar.png"  width="700" height="480" controls></video>
                 </li>
 
                 <li>
-                    <video src="videos/Pinkfloyd_vfx.m4v" poster="images/portadas/pinkfloyd.png"  width="854" height="480" controls></video>
+                    <video src="videos/Pinkfloyd_vfx.m4v" poster="images/portadas/pinkfloyd.png"  width="700" height="480" controls></video>
                 </li>
 
                 <li>
-                    <video src="videos/WIMM.m4v" poster="images/portadas/WIMM.png"  width="854" height="480" controls></video>
+                    <video src="videos/WIMM.m4v" poster="images/portadas/WIMM.png"  width="700" height="480" controls></video>
                 </li>
 
                 <li>
-                    <video src="videos/Vicente Guerrero.m4v" poster="images/portadas/Vicente Guerrero.png"  width="854" height="480" controls></video>
+                    <video src="videos/Vicente Guerrero.m4v" poster="images/portadas/Vicente Guerrero.png"  width="700" height="480" controls></video>
                 </li>
                
             </ul>
+        
+        </div>
 
-            <h1>GRÁFICO</h1>   
+             
+        <div class="box box_2 under"> 
+            <h1>GRÁFICO</h1> 
             <ul class="grafico">
 
-                <!-- <li>
-                    <div class="titulografico">
-                    <img src="images/Video.svg" width="340" height="230" alt="logo fridxc">
-                </li> 
-                 -->
-                <li>
-                    <img src="images/grafico/chileserrano_remasterizado.png" width="340" height="500"   alt="infografía Chile Serrano">
+                 <li>
+                    <img src="images/grafico/chileserrano_remasterizado.png" width="340" height="600"   alt="infografía Chile Serrano">
                 </li>
 
                 <li>
-                    <img src="images/grafico/CorajeReprimido.png" width="520" height="380"  alt="CartelSupresión">
+                    <img src="images/grafico/CorajeReprimido.png" width="520" height="600"  alt="CartelSupresión">
                 </li>
 
                 <li>
-                    <img src="images/grafico/ELEKTRA.jpg"  alt="Elektra">
+                    <img src="images/grafico/ELEKTRA.jpg" width="520" height="600" alt="Elektra">
                 </li>
 
                 <li>
@@ -71,32 +93,32 @@
                 </li>             
                
             </ul>
+        
+        </div>
 
-            <h1>FOTOGRAFÍA</h1>   
+            
+        
+        <div class="box box_3 under">
+            <h1>FOTO</h1>
             <ul class="fotografia">
 
-                <!-- <li>
-                    <div class="titulografico">
-                    <img src="images/Video.svg" width="340" height="230" alt="logo fridxc">
-                </li> 
-                 -->
                 <li>
-                    <div class="view view-first" style="position: relative;z-index: 0;">
+                    <!-- <div class="view view-first" style="position: relative;z-index: 0;"> -->
                         <img src="images/fotografia/barras.JPG"  alt="barras">
-                            <div class="mask">
+                            <!-- <div class="mask">
                                 <h2>Empire State</h2>
-                                <!--<p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>-->
+                                <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
                                 <button id="myImg">+</button>
                                      
                             </div>
-                            <!-- The Modal -->
+                            The Modal comentaeiooo
                         <div id="myModal" class="modal">
                             <span class="close" style="position: absolute;z-index: 3;">&times;</span>
                             <img class="modal-content" img src="images/fotografia/barras.JPG" alt="love" id="img01">
                             <div id="caption"></div>
-                        </div>
+                        </div> 
 
-                    </div>
+                    </div>-->
                      
                 </li>
 
@@ -121,15 +143,20 @@
                 </li> 
                
             </ul>
+        </div>
 
     </section>
 
 </body>
 
-<script src="js/popup.js"></script> 
 <script
 			  src="https://code.jquery.com/jquery-3.5.1.js"
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-			  crossorigin="anonymous"></script>
+              crossorigin="anonymous"></script>
+              
+<script src="js/popup.js"></script> 
+<script src="js/nav.js"></script> 
+<script src="js/proyectosscroll.js"></script> 
+
 
 </html>
